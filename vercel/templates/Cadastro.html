@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/estilo.css">
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+    <div class="card">
+      <div class="page-header">
+          <h2>{{ Titulo }}</h2>
+      </div>
+      <form action="/criar" method="post">
+        <fieldset>
+          <div class="form-grupo">
+            <label for=local>Local</label>
+            <input type="text" id="local" name="local" class="form-control">
+          </div>
+          <div class="form-grupo">
+            <label for="nome">Nome do Viajante</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+          </div>
+          <div class="form-grupo">
+            <label for="estação">Estação</label>
+            <input type="text" id="estação" name="estação" class="form-control">
+          </div>
+          <div class="form-grupo">
+            <label for="transporte">Transporte</label>
+            <input type="text" id="transporte" name="transporte" class="form-control">
+          </div>
+           <div class="form-grupo">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" class="form-control">
+          </div>
+          <button class="btn-form" type="submit">Cadastrar Viagem</button>
+        </fieldset>
+      </form>
+    </div>
+        <div class="voltar">
+        <a href="/">
+            <img class="seta" src="/static/setaEsquerda.png">
+            Voltar à Página Inicial</a>
+        </div>
+
+</body>
+</html>
